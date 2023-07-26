@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns="http://ufs.br/ontologies/mpl2kdl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<rdf:Description rdf:about="http://ufs.br/ontologies/mpl2kdl#test_global">
+	<ontologyID xmlns="http://www.wsmo.org/wsml/wsml-syntax#" rdf:resource="http://ufs.br/ontologies/mpl2kdl#test_global"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ufs.br/ontologies/mpl2kdl#Module0x7ff74d41b040">
+	<rdf:type rdf:resource="http://ufs.br/ontologies/mpl2kdl#Module"/>
+	<_body rdf:resource="http://ufs.br/ontologies/mpl2kdl#Global0x7ff74d41b010"/>
+	<_body rdf:resource="http://ufs.br/ontologies/mpl2kdl#Assign0x7ff74d41afe0"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ufs.br/ontologies/mpl2kdl#Global0x7ff74d41b010">
+	<rdf:type rdf:resource="http://ufs.br/ontologies/mpl2kdl#Global"/>
+	<_names rdf:resource="http://ufs.br/ontologies/mpl2kdl#str0x7ff75b4868e0"/>
+	<_isStepOf rdf:resource="http://ufs.br/ontologies/mpl2kdl#Module0x7ff74d41b040"/>
+	<_isPreceededBy rdf:resource="http://ufs.br/ontologies/mpl2kdl#NoneStmt"/>
+	<_isSucceededBy rdf:resource="http://ufs.br/ontologies/mpl2kdl#Assign0x7ff74d41afe0"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ufs.br/ontologies/mpl2kdl#Assign0x7ff74d41afe0">
+	<rdf:type rdf:resource="http://ufs.br/ontologies/mpl2kdl#Assign"/>
+	<_targets rdf:resource="http://ufs.br/ontologies/mpl2kdl#Name0x7ff74d41afb0"/>
+	<_value rdf:resource="http://ufs.br/ontologies/mpl2kdl#Constant0x7ff74d41af80"/>
+	<_isStepOf rdf:resource="http://ufs.br/ontologies/mpl2kdl#Module0x7ff74d41b040"/>
+	<_isPreceededBy rdf:resource="http://ufs.br/ontologies/mpl2kdl#Global0x7ff74d41b010"/>
+	<_isSucceededBy rdf:resource="http://ufs.br/ontologies/mpl2kdl#NoneStmt"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ufs.br/ontologies/mpl2kdl#Name0x7ff74d41afb0">
+	<rdf:type rdf:resource="http://ufs.br/ontologies/mpl2kdl#Name"/>
+	<_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a</_id>
+	<_ctx rdf:resource="http://ufs.br/ontologies/mpl2kdl#Store0x7ff74d419450"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ufs.br/ontologies/mpl2kdl#Store0x7ff74d419450">
+	<rdf:type rdf:resource="http://ufs.br/ontologies/mpl2kdl#Store"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ufs.br/ontologies/mpl2kdl#Constant0x7ff74d41af80">
+	<rdf:type rdf:resource="http://ufs.br/ontologies/mpl2kdl#Constant"/>
+	<_value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</_value>
+	<_kind rdf:datatype="http://www.w3.org/2001/XMLSchema#string">None</_kind>
+</rdf:Description>
+
+<rdf:Description rdf:about="http://ufs.br/ontologies/mpl2kdl#NoneStmt">
+	<rdf:type rdf:resource="http://ufs.br/ontologies/mpl2kdl#stmt"/>
+</rdf:Description>
+
+</rdf:RDF>

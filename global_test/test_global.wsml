@@ -1,0 +1,27 @@
+wsmlVariant _"http://www.wsmo.org/wsml/wsml-syntax/wsml-rule"
+namespace { _"http://ufs.br/ontologies/mpl2kdl#"}
+
+ontology test_global
+   importsOntology{_"http://ufs.br/ontologies/mpl2kdl#PythonAbstractSyntax"}  
+
+   instance Module0x7ff74d41b040 memberOf Module
+      _body hasValue {Global0x7ff74d41b010, Assign0x7ff74d41afe0}
+   instance Global0x7ff74d41b010 memberOf Global
+      _names hasValue {str0x7ff75b4868e0}
+      _isStepOf hasValue Module0x7ff74d41b040
+      _isPreceededBy hasValue NoneStmt
+      _isSucceededBy hasValue Assign0x7ff74d41afe0
+   instance Assign0x7ff74d41afe0 memberOf Assign
+      _targets hasValue {Name0x7ff74d41afb0}
+      _value hasValue Constant0x7ff74d41af80
+      _isStepOf hasValue Module0x7ff74d41b040
+      _isPreceededBy hasValue Global0x7ff74d41b010
+      _isSucceededBy hasValue NoneStmt
+   instance Name0x7ff74d41afb0 memberOf Name
+      _id hasValue "a"
+      _ctx hasValue Store0x7ff74d419450
+   instance Store0x7ff74d419450 memberOf Store
+   instance Constant0x7ff74d41af80 memberOf Constant
+      _value hasValue "1"
+      _kind hasValue "None"
+   instance NoneStmt memberOf stmt

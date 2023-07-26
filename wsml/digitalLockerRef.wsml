@@ -1,0 +1,375 @@
+wsmlVariant _"http://www.wsmo.org/wsml/wsml-syntax/wsml-rule"
+namespace { _"http://ufs.br/ontologies/mpl2kdl#"}
+
+ontology digitalLockerRef
+   importsOntology{_"http://ufs.br/ontologies/mpl2kdl#PythonAbstractSyntax"}  
+
+   instance Module0x7f7e4a517fd0 memberOf Module
+      _body hasValue {ImportFrom0x7f7e4a517fa0, ImportFrom0x7f7e4a517f40, ImportFrom0x7f7e4a517ee0, FunctionDef0x7f7e4a517ca0}
+   instance ImportFrom0x7f7e4a517fa0 memberOf ImportFrom
+      _module hasValue "esp"
+      _names hasValue {alias0x7f7e4a517f70}
+      _isStepOf hasValue Module0x7f7e4a517fd0
+      _isPreceededBy hasValue NoneStmt
+      _isSucceededBy hasValue ImportFrom0x7f7e4a517f40
+   instance alias0x7f7e4a517f70 memberOf alias
+      _name hasValue "osdebug"
+      _asname hasValue "vendor_os_debugging_messages"
+   instance ImportFrom0x7f7e4a517f40 memberOf ImportFrom
+      _module hasValue "gc"
+      _names hasValue {alias0x7f7e4a517f10}
+      _isStepOf hasValue Module0x7f7e4a517fd0
+      _isPreceededBy hasValue ImportFrom0x7f7e4a517fa0
+      _isSucceededBy hasValue ImportFrom0x7f7e4a517ee0
+   instance alias0x7f7e4a517f10 memberOf alias
+      _name hasValue "collect"
+      _asname hasValue "garbage_colector"
+   instance ImportFrom0x7f7e4a517ee0 memberOf ImportFrom
+      _module hasValue "digitalLockerRefRef.digitalLocker_librayRef"
+      _names hasValue {alias0x7f7e4a517eb0, alias0x7f7e4a517e80, alias0x7f7e4a517e50, alias0x7f7e4a517e20, alias0x7f7e4a517df0, alias0x7f7e4a517dc0, alias0x7f7e4a517d90, alias0x7f7e4a517d60, alias0x7f7e4a517d30, alias0x7f7e4a517d00, alias0x7f7e4a517cd0}
+      _isStepOf hasValue Module0x7f7e4a517fd0
+      _isPreceededBy hasValue ImportFrom0x7f7e4a517f40
+      _isSucceededBy hasValue FunctionDef0x7f7e4a517ca0
+   instance alias0x7f7e4a517eb0 memberOf alias
+      _name hasValue "wifi_station_connector_with_ssid_and_password"
+   instance alias0x7f7e4a517e80 memberOf alias
+      _name hasValue "socket_connector_with_port_max_listenable_and_host"
+   instance alias0x7f7e4a517e50 memberOf alias
+      _name hasValue "socket_accepted_connection"
+   instance alias0x7f7e4a517e20 memberOf alias
+      _name hasValue "socket_request_receiver"
+   instance alias0x7f7e4a517df0 memberOf alias
+      _name hasValue "web_page_loader"
+   instance alias0x7f7e4a517dc0 memberOf alias
+      _name hasValue "socket_response_sender_by_conn"
+   instance alias0x7f7e4a517d90 memberOf alias
+      _name hasValue "init_locker"
+   instance alias0x7f7e4a517d60 memberOf alias
+      _name hasValue "open_locker_request"
+   instance alias0x7f7e4a517d30 memberOf alias
+      _name hasValue "close_locker_request"
+   instance alias0x7f7e4a517d00 memberOf alias
+      _name hasValue "open_locker"
+   instance alias0x7f7e4a517cd0 memberOf alias
+      _name hasValue "close_locker"
+   instance FunctionDef0x7f7e4a517ca0 memberOf FunctionDef
+      _name hasValue "startServer"
+      _args hasValue arguments0x7f7e4a517c70
+      _body hasValue {Expr0x7f7e4a517c10, Expr0x7f7e4a517a30, Expr0x7f7e4a5179a0, Assign0x7f7e4a5178b0, Assign0x7f7e4a517790, While0x7f7e4a517670}
+      _isStepOf hasValue Module0x7f7e4a517fd0
+      _isPreceededBy hasValue ImportFrom0x7f7e4a517ee0
+      _isSucceededBy hasValue NoneStmt
+   instance arguments0x7f7e4a517c70 memberOf arguments
+   instance Expr0x7f7e4a517c10 memberOf Expr
+      _value hasValue Call0x7f7e4a517be0
+      _isStepOf hasValue FunctionDef0x7f7e4a517ca0
+      _isPreceededBy hasValue NoneStmt
+      _isSucceededBy hasValue Expr0x7f7e4a517a30
+   instance Call0x7f7e4a517be0 memberOf Call
+      _func hasValue Name0x7f7e4a517a90
+      _args hasValue {Constant0x7f7e4a517a60}
+   instance Name0x7f7e4a517a90 memberOf Name
+      _id hasValue "vendor_os_debugging_messages"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Constant0x7f7e4a517a60 memberOf Constant
+      _value hasValue "None"
+      _kind hasValue "None"
+   instance Expr0x7f7e4a517a30 memberOf Expr
+      _value hasValue Call0x7f7e4a517a00
+      _isStepOf hasValue FunctionDef0x7f7e4a517ca0
+      _isPreceededBy hasValue Expr0x7f7e4a517c10
+      _isSucceededBy hasValue Expr0x7f7e4a5179a0
+   instance Call0x7f7e4a517a00 memberOf Call
+      _func hasValue Name0x7f7e4a5179d0
+   instance Name0x7f7e4a5179d0 memberOf Name
+      _id hasValue "garbage_colector"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Expr0x7f7e4a5179a0 memberOf Expr
+      _value hasValue Call0x7f7e4a517970
+      _isStepOf hasValue FunctionDef0x7f7e4a517ca0
+      _isPreceededBy hasValue Expr0x7f7e4a517a30
+      _isSucceededBy hasValue Assign0x7f7e4a5178b0
+   instance Call0x7f7e4a517970 memberOf Call
+      _func hasValue Name0x7f7e4a517940
+      _args hasValue {Constant0x7f7e4a517910, Constant0x7f7e4a5178e0}
+   instance Name0x7f7e4a517940 memberOf Name
+      _id hasValue "wifi_station_connector_with_ssid_and_password"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Constant0x7f7e4a517910 memberOf Constant
+      _value hasValue "\"NameOfNetworkTP\""
+      _kind hasValue "None"
+   instance Constant0x7f7e4a5178e0 memberOf Constant
+      _value hasValue "\"0123456789\""
+      _kind hasValue "None"
+   instance Assign0x7f7e4a5178b0 memberOf Assign
+      _targets hasValue {Tuple0x7f7e4a517880}
+      _value hasValue Call0x7f7e4a5177f0
+      _isStepOf hasValue FunctionDef0x7f7e4a517ca0
+      _isPreceededBy hasValue Expr0x7f7e4a5179a0
+      _isSucceededBy hasValue Assign0x7f7e4a517790
+   instance Tuple0x7f7e4a517880 memberOf Tuple
+      _elts hasValue {Name0x7f7e4a517850, Name0x7f7e4a517820}
+      _ctx hasValue Store0x7f7e4a5151b0
+   instance Name0x7f7e4a517850 memberOf Name
+      _id hasValue "locker_state"
+      _ctx hasValue Store0x7f7e4a5151b0
+   instance Store0x7f7e4a5151b0 memberOf Store
+   instance Name0x7f7e4a517820 memberOf Name
+      _id hasValue "motor"
+      _ctx hasValue Store0x7f7e4a5151b0
+   instance Store0x7f7e4a5151b0 memberOf Store
+   instance Store0x7f7e4a5151b0 memberOf Store
+   instance Call0x7f7e4a5177f0 memberOf Call
+      _func hasValue Name0x7f7e4a5177c0
+   instance Name0x7f7e4a5177c0 memberOf Name
+      _id hasValue "init_locker"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Assign0x7f7e4a517790 memberOf Assign
+      _targets hasValue {Name0x7f7e4a517760}
+      _value hasValue Call0x7f7e4a517730
+      _isStepOf hasValue FunctionDef0x7f7e4a517ca0
+      _isPreceededBy hasValue Assign0x7f7e4a5178b0
+      _isSucceededBy hasValue While0x7f7e4a517670
+   instance Name0x7f7e4a517760 memberOf Name
+      _id hasValue "socket"
+      _ctx hasValue Store0x7f7e4a5151b0
+   instance Store0x7f7e4a5151b0 memberOf Store
+   instance Call0x7f7e4a517730 memberOf Call
+      _func hasValue Name0x7f7e4a517700
+      _args hasValue {Constant0x7f7e4a5176d0, Constant0x7f7e4a5176a0}
+   instance Name0x7f7e4a517700 memberOf Name
+      _id hasValue "socket_connector_with_port_max_listenable_and_host"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Constant0x7f7e4a5176d0 memberOf Constant
+      _value hasValue "3000"
+      _kind hasValue "None"
+   instance Constant0x7f7e4a5176a0 memberOf Constant
+      _value hasValue "2"
+      _kind hasValue "None"
+   instance While0x7f7e4a517670 memberOf While
+      _test hasValue Constant0x7f7e4a517640
+      _body hasValue {Assign0x7f7e4a517610, Assign0x7f7e4a517520, Assign0x7f7e4a517370, Assign0x7f7e4a517280, If0x7f7e4a517190, If0x7f7e4a516ef0, Assign0x7f7e4a516cb0, Expr0x7f7e4a53a2f0}
+      _isStepOf hasValue FunctionDef0x7f7e4a517ca0
+      _isPreceededBy hasValue Assign0x7f7e4a517790
+      _isSucceededBy hasValue NoneStmt
+   instance Constant0x7f7e4a517640 memberOf Constant
+      _value hasValue "True"
+      _kind hasValue "None"
+   instance Assign0x7f7e4a517610 memberOf Assign
+      _targets hasValue {Name0x7f7e4a5175e0}
+      _value hasValue Call0x7f7e4a5175b0
+      _isStepOf hasValue While0x7f7e4a517670
+      _isPreceededBy hasValue NoneStmt
+      _isSucceededBy hasValue Assign0x7f7e4a517520
+   instance Name0x7f7e4a5175e0 memberOf Name
+      _id hasValue "connection"
+      _ctx hasValue Store0x7f7e4a5151b0
+   instance Store0x7f7e4a5151b0 memberOf Store
+   instance Call0x7f7e4a5175b0 memberOf Call
+      _func hasValue Name0x7f7e4a517580
+      _args hasValue {Name0x7f7e4a517550}
+   instance Name0x7f7e4a517580 memberOf Name
+      _id hasValue "socket_accepted_connection"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Name0x7f7e4a517550 memberOf Name
+      _id hasValue "socket"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Assign0x7f7e4a517520 memberOf Assign
+      _targets hasValue {Name0x7f7e4a5174f0}
+      _value hasValue Call0x7f7e4a5174c0
+      _isStepOf hasValue While0x7f7e4a517670
+      _isPreceededBy hasValue Assign0x7f7e4a517610
+      _isSucceededBy hasValue Assign0x7f7e4a517370
+   instance Name0x7f7e4a5174f0 memberOf Name
+      _id hasValue "request"
+      _ctx hasValue Store0x7f7e4a5151b0
+   instance Store0x7f7e4a5151b0 memberOf Store
+   instance Call0x7f7e4a5174c0 memberOf Call
+      _func hasValue Name0x7f7e4a517400
+      _args hasValue {Name0x7f7e4a5173d0, Constant0x7f7e4a5173a0}
+   instance Name0x7f7e4a517400 memberOf Name
+      _id hasValue "socket_request_receiver"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Name0x7f7e4a5173d0 memberOf Name
+      _id hasValue "connection"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Constant0x7f7e4a5173a0 memberOf Constant
+      _value hasValue "1024"
+      _kind hasValue "None"
+   instance Assign0x7f7e4a517370 memberOf Assign
+      _targets hasValue {Name0x7f7e4a517340}
+      _value hasValue Call0x7f7e4a517310
+      _isStepOf hasValue While0x7f7e4a517670
+      _isPreceededBy hasValue Assign0x7f7e4a517520
+      _isSucceededBy hasValue Assign0x7f7e4a517280
+   instance Name0x7f7e4a517340 memberOf Name
+      _id hasValue "locker_on"
+      _ctx hasValue Store0x7f7e4a5151b0
+   instance Store0x7f7e4a5151b0 memberOf Store
+   instance Call0x7f7e4a517310 memberOf Call
+      _func hasValue Name0x7f7e4a5172e0
+      _args hasValue {Name0x7f7e4a5172b0}
+   instance Name0x7f7e4a5172e0 memberOf Name
+      _id hasValue "open_locker_request"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Name0x7f7e4a5172b0 memberOf Name
+      _id hasValue "request"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Assign0x7f7e4a517280 memberOf Assign
+      _targets hasValue {Name0x7f7e4a517250}
+      _value hasValue Call0x7f7e4a517220
+      _isStepOf hasValue While0x7f7e4a517670
+      _isPreceededBy hasValue Assign0x7f7e4a517370
+      _isSucceededBy hasValue If0x7f7e4a517190
+   instance Name0x7f7e4a517250 memberOf Name
+      _id hasValue "locker_off"
+      _ctx hasValue Store0x7f7e4a5151b0
+   instance Store0x7f7e4a5151b0 memberOf Store
+   instance Call0x7f7e4a517220 memberOf Call
+      _func hasValue Name0x7f7e4a5171f0
+      _args hasValue {Name0x7f7e4a5171c0}
+   instance Name0x7f7e4a5171f0 memberOf Name
+      _id hasValue "close_locker_request"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Name0x7f7e4a5171c0 memberOf Name
+      _id hasValue "request"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance If0x7f7e4a517190 memberOf If
+      _test hasValue Compare0x7f7e4a517160
+      _body hasValue {Assign0x7f7e4a516fe0}
+      _isStepOf hasValue While0x7f7e4a517670
+      _isPreceededBy hasValue Assign0x7f7e4a517280
+      _isSucceededBy hasValue If0x7f7e4a516ef0
+   instance Compare0x7f7e4a517160 memberOf Compare
+      _left hasValue Name0x7f7e4a517130
+      _ops hasValue {Eq0x7f7e4a515a80}
+      _comparators hasValue {Constant0x7f7e4a517010}
+   instance Name0x7f7e4a517130 memberOf Name
+      _id hasValue "locker_on"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Eq0x7f7e4a515a80 memberOf Eq
+   instance Constant0x7f7e4a517010 memberOf Constant
+      _value hasValue "6"
+      _kind hasValue "None"
+   instance Assign0x7f7e4a516fe0 memberOf Assign
+      _targets hasValue {Name0x7f7e4a516fb0}
+      _value hasValue Call0x7f7e4a516f80
+      _isStepOf hasValue If0x7f7e4a517190
+      _isPreceededBy hasValue NoneStmt
+      _isSucceededBy hasValue NoneStmt
+   instance Name0x7f7e4a516fb0 memberOf Name
+      _id hasValue "locker_state"
+      _ctx hasValue Store0x7f7e4a5151b0
+   instance Store0x7f7e4a5151b0 memberOf Store
+   instance Call0x7f7e4a516f80 memberOf Call
+      _func hasValue Name0x7f7e4a516f50
+      _args hasValue {Name0x7f7e4a516f20}
+   instance Name0x7f7e4a516f50 memberOf Name
+      _id hasValue "open_locker"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Name0x7f7e4a516f20 memberOf Name
+      _id hasValue "motor"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance If0x7f7e4a516ef0 memberOf If
+      _test hasValue Compare0x7f7e4a516ec0
+      _body hasValue {Assign0x7f7e4a516dd0}
+      _isStepOf hasValue While0x7f7e4a517670
+      _isPreceededBy hasValue If0x7f7e4a517190
+      _isSucceededBy hasValue Assign0x7f7e4a516cb0
+   instance Compare0x7f7e4a516ec0 memberOf Compare
+      _left hasValue Name0x7f7e4a516e30
+      _ops hasValue {Eq0x7f7e4a515a80}
+      _comparators hasValue {Constant0x7f7e4a516e00}
+   instance Name0x7f7e4a516e30 memberOf Name
+      _id hasValue "locker_off"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Eq0x7f7e4a515a80 memberOf Eq
+   instance Constant0x7f7e4a516e00 memberOf Constant
+      _value hasValue "6"
+      _kind hasValue "None"
+   instance Assign0x7f7e4a516dd0 memberOf Assign
+      _targets hasValue {Name0x7f7e4a516da0}
+      _value hasValue Call0x7f7e4a516d10
+      _isStepOf hasValue If0x7f7e4a516ef0
+      _isPreceededBy hasValue NoneStmt
+      _isSucceededBy hasValue NoneStmt
+   instance Name0x7f7e4a516da0 memberOf Name
+      _id hasValue "locker_state"
+      _ctx hasValue Store0x7f7e4a5151b0
+   instance Store0x7f7e4a5151b0 memberOf Store
+   instance Call0x7f7e4a516d10 memberOf Call
+      _func hasValue Name0x7f7e4a516ce0
+      _args hasValue {Name0x7f7e4a516c50}
+   instance Name0x7f7e4a516ce0 memberOf Name
+      _id hasValue "close_locker"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Name0x7f7e4a516c50 memberOf Name
+      _id hasValue "motor"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Assign0x7f7e4a516cb0 memberOf Assign
+      _targets hasValue {Name0x7f7e4a53a410}
+      _value hasValue Call0x7f7e4a53a3e0
+      _isStepOf hasValue While0x7f7e4a517670
+      _isPreceededBy hasValue If0x7f7e4a516ef0
+      _isSucceededBy hasValue Expr0x7f7e4a53a2f0
+   instance Name0x7f7e4a53a410 memberOf Name
+      _id hasValue "response"
+      _ctx hasValue Store0x7f7e4a5151b0
+   instance Store0x7f7e4a5151b0 memberOf Store
+   instance Call0x7f7e4a53a3e0 memberOf Call
+      _func hasValue Name0x7f7e4a53a3b0
+      _args hasValue {Constant0x7f7e4a53a380, Constant0x7f7e4a53a350, Name0x7f7e4a53a320}
+   instance Name0x7f7e4a53a3b0 memberOf Name
+      _id hasValue "web_page_loader"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Constant0x7f7e4a53a380 memberOf Constant
+      _value hasValue "\"page.html\""
+      _kind hasValue "None"
+   instance Constant0x7f7e4a53a350 memberOf Constant
+      _value hasValue "\"\"\"\" + locker_state + \"\"\"\""
+      _kind hasValue "None"
+   instance Name0x7f7e4a53a320 memberOf Name
+      _id hasValue "locker_state"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Expr0x7f7e4a53a2f0 memberOf Expr
+      _value hasValue Call0x7f7e4a53a2c0
+      _isStepOf hasValue While0x7f7e4a517670
+      _isPreceededBy hasValue Assign0x7f7e4a516cb0
+      _isSucceededBy hasValue NoneStmt
+   instance Call0x7f7e4a53a2c0 memberOf Call
+      _func hasValue Name0x7f7e4a53a290
+      _args hasValue {Name0x7f7e4a53a260, Name0x7f7e4a53a230}
+   instance Name0x7f7e4a53a290 memberOf Name
+      _id hasValue "socket_response_sender_by_conn"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Name0x7f7e4a53a260 memberOf Name
+      _id hasValue "connection"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance Name0x7f7e4a53a230 memberOf Name
+      _id hasValue "response"
+      _ctx hasValue Load0x7f7e4a515150
+   instance Load0x7f7e4a515150 memberOf Load
+   instance NoneStmt memberOf stmt
